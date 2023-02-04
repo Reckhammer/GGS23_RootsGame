@@ -9,22 +9,53 @@ public class CursorProjectileController : MonoBehaviour
     public GameObject attached;
     public GameObject player;
     public Rigidbody2D rb;
+    public Rigidbody2D attachedRB;
+    public float jumpForce = 7f;
+    public float moveSpeed = 10f;
 
     private GameObject cam;
-    private Vector3 offset;
+    private Vector3 offset = new Vector3 (0,0,-1);
+    private bool destroying;
+    private float destructTimer;
 
     // Start is called before the first frame update
     void Start()
     {
         offset = transform.position;// - target.position;
         rb = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, 5f);
+
+        destructTimer = 5f;
+        //Destroy(gameObject, 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
         
+        if (attached != null)
+        {
+            attachedRB.transform.position += new Vector3(horizontal * moveSpeed * Time.deltaTime, 0);
+        }
+
+        if (destroying == true) { destructTimer -= 1 * Time.deltaTime; }
+        if (destructTimer < 0)  { Destroy(gameObject); }
+        if (attached != null) { transform.position = attached.transform.position + new Vector3 (0,0,-1);}
+
+        if (Input.GetButtonDown("Fire1") && attached != null)
+        {
+            Destroy(gameObject);
+        }
+
+
+        /*if (Input.GetButtonDown("Jump") && attached != null)
+        {
+            attachedRB.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        }*/
+
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision) 
@@ -32,8 +63,10 @@ public class CursorProjectileController : MonoBehaviour
         if (collision.gameObject.tag == "Attachable")
         {
             attached = collision.gameObject;
-            transform.position = attached.transform.position + new Vector3 (0,0,-1);
+            attachedRB = collision.gameObject.GetComponent<Rigidbody2D>();
+            transform.position = attached.transform.position + offset;
             rb.velocity = new Vector3 (0,0,0);
+            destroying = false;
         }
         //else
         if (collision.gameObject.tag == "Ground")
@@ -45,12 +78,9 @@ public class CursorProjectileController : MonoBehaviour
 
     void OnDestroy() 
     {
-        if (attached == null)
-        {
             cam = GameObject.Find("Main Camera");
             cam.GetComponent<CameraController>().ChangeCameraTarget(GameObject.Find("Player").transform);
             player = GameObject.Find("Player");
             player.GetComponent<PlyaerController>().canMove = true;
-        }
     }
 }
