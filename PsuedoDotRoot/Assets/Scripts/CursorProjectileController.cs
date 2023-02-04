@@ -81,6 +81,6 @@ public class CursorProjectileController : MonoBehaviour
             cam = GameObject.Find("Main Camera");
             cam.GetComponent<CameraController>().ChangeCameraTarget(GameObject.Find("Player").transform);
             player = GameObject.Find("Player");
-            player.GetComponent<PlyaerController>().canMove = true;
+            player.GetComponent<PlayerController>().canMove = true;
     }
 }
