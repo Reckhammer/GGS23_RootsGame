@@ -31,7 +31,10 @@ public class PlyaerController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        transform.position += new Vector3(horizontal * moveSpeed * Time.deltaTime, 0);
+        if (canMove == true)
+        {
+            transform.position += new Vector3(horizontal * moveSpeed * Time.deltaTime, 0);
+        }
 
 
         if (horizontal != 0f || vertical != 0f)
@@ -57,9 +60,8 @@ public class PlyaerController : MonoBehaviour
             currentProjectile = Instantiate(projectileCursor, transform.position, Quaternion.identity);
             Rigidbody2D rig = currentProjectile.GetComponent<Rigidbody2D>();
             rig.velocity = facing * projectileSpeed;
-            
-
-
+            canMove = false;
+            cam.GetComponent<CameraController>().ChangeCameraTarget(currentProjectile.transform);
             
         }
     }
