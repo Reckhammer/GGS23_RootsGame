@@ -18,10 +18,10 @@ public class PlayerController : MonoBehaviour
     private int jumpCount;
     private Vector2 facing;
     [SerializeField] private GameObject currentProjectile;
+    private float horizontal;
+    private float vertical;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -29,13 +29,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-        if (canMove == true)
-        {
-            transform.position += new Vector3(horizontal * moveSpeed * Time.deltaTime, 0);
-        }
-
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
 
         if (horizontal != 0f || vertical != 0f)
         {
@@ -66,6 +61,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (canMove == true)
+        {
+            rb.position += new Vector2(horizontal * moveSpeed * Time.deltaTime, 0);
+        }
+
+        
+    }
 
     private void Jump ()
     {
