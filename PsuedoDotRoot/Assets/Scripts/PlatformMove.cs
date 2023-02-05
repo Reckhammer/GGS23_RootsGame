@@ -5,9 +5,9 @@ using UnityEngine.Apple;
 
 public class PlatformMove : MonoBehaviour
 {
-    public GameObject[] wayPoints;
-    public float speed = 1f;
-    private int current = 0;
+    public GameObject[] wayPoints;  // Positions that the platform will move between
+    public float speed = 1f;        // How fast the platforms will move to get to waypoints
+    private int current = 0;        // Current waypoint that this is moving towards
 
     private void Update()
     {

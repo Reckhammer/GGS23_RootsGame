@@ -5,10 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class KeyItem : MonoBehaviour
 {
-    public GameObject targetObject;
-    public string targetTag = "Player";
-    public float followSpeed = 5f;
-    public float distFromTarget = .5f;
+    public GameObject targetObject;         // Object that this is following
+    public string targetTag = "Player";     // Tag of object to follow
+    public float followSpeed = 5f;          // How fast this will move to follow target
+    public float distFromTarget = .5f;      // Distance from target to stop moving
 
     // Update is called once per frame
     void Update()
