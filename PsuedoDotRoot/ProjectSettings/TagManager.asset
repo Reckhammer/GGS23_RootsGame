@@ -9,6 +9,7 @@ TagManager:
   - Mirror
   - Door
   - Powerup
+  - Enemy
   layers:
   - Default
   - TransparentFX

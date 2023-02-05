@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject lastDoor;
     private bool isSudo = false;
 
+    public event Action PlayerDied;
 
     private void Awake()
     {
@@ -87,6 +90,16 @@ public class PlayerController : MonoBehaviour
         jumpCount = maxJumpCount;
     }
 
+    private void Death()
+    {
+        // Play Death Anim
+        // Disable Player Movement
+        canMove = false;
+        isGrounded = false;
+
+        PlayerDied?.Invoke();
+    }
+
     private void OnCollisionEnter2D (Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground")
@@ -108,6 +121,11 @@ public class PlayerController : MonoBehaviour
         else if (collision.gameObject.tag =="Powerup")
         {
             isSudo = true;
+            
+        }
+        else if (collision.gameObject.tag == "Enemy")
+        {
+            Death();
             
         }
     }
