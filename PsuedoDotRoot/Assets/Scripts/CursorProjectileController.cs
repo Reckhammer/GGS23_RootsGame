@@ -15,8 +15,8 @@ public class CursorProjectileController : MonoBehaviour
 
     private GameObject cam;
     private Vector3 offset = new Vector3 (0,0,-1);
-    private bool destroying;
-    private float destructTimer;
+    private bool destroying = true;
+    [SerializeField] private float destructTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class CursorProjectileController : MonoBehaviour
         offset = transform.position;// - target.position;
         rb = GetComponent<Rigidbody2D>();
 
-        destructTimer = 5f;
+        destructTimer = 4f;
         //Destroy(gameObject, 5f);
     }
 
@@ -48,12 +48,6 @@ public class CursorProjectileController : MonoBehaviour
             Destroy(gameObject);
         }
 
-
-        /*if (Input.GetButtonDown("Jump") && attached != null)
-        {
-            attachedRB.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-        }*/
-
         
 
     }
@@ -73,7 +67,17 @@ public class CursorProjectileController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Mirror")
+        {
+            rb.velocity = Vector2.Reflect(rb.velocity, collision.transform.right);
+        }
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+
     }
 
     void OnDestroy() 
