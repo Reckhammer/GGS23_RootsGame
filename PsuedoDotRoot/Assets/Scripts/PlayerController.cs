@@ -80,6 +80,16 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             jumpCount = maxJumpCount;
+
+            this.transform.SetParent(collision.transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Attachable")
+        {
+            this.transform.SetParent(null);
         }
     }
 }
