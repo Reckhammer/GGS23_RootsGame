@@ -19,11 +19,15 @@ public class Enemy : MonoBehaviour
     private EnemyStatus currentStatus = EnemyStatus.Waiting;
     private int currentPos;
     private float timeElapsed = 0f;
+    private Animator animator;
 
     private void Awake()
     {
         if ( myRigidbody2D == null )
             myRigidbody2D = GetComponent<Rigidbody2D>();
+
+        if ( animator == null )
+            animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -50,10 +54,12 @@ public class Enemy : MonoBehaviour
             }
 
             currentStatus = EnemyStatus.Waiting;
+            animator.SetBool("Move", false);
 
             return;
         }
 
+        animator.SetBool("Move", true);
         myRigidbody2D.position = Vector2.MoveTowards(transform.position, waypoints[currentPos].transform.position, Time.deltaTime * speed);
     }
 

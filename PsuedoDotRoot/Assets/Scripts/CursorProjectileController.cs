@@ -18,11 +18,14 @@ public class CursorProjectileController : MonoBehaviour
     private bool destroying = true;
     private float destructTimer;
 
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         offset = transform.position;// - target.position;
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
 
         destructTimer = 4f;
     }
@@ -56,8 +59,11 @@ public class CursorProjectileController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) 
     {
-        if (collision.gameObject.tag == "Attachable" && attached == null)
+        if (collision.GetComponent<MoveableBoxPhysics>() != null && attached == null)
         {
+            if (animator != null)
+                animator.SetTrigger("Click");
+
             attached = collision.gameObject;
             collision.GetComponent<MoveableBoxPhysics>().isAttached = true;
             attachedRB = collision.gameObject.GetComponent<Rigidbody2D>();
