@@ -27,11 +27,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject lastDoor;
     private bool isSudo = false;
 
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
     public event Action PlayerDied;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -67,6 +72,15 @@ public class PlayerController : MonoBehaviour
             cam.GetComponent<CameraController>().ChangeCameraTarget(currentProjectile.transform);
             
         }
+
+        if (horizontal > 0f && canMove)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (horizontal < 0f && canMove)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 
     private void FixedUpdate()
@@ -75,10 +89,23 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
         }
+
+        if (animator != null)
+        {
+            if (rb.velocity.magnitude > 0f)
+                animator.SetBool("Move", true);
+            else
+                animator.SetBool("Move", false);
+        }
     }
 
     private void Jump ()
     {
+        if (animator != null)
+        {
+            animator.SetTrigger("Jump");
+        }
+
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
         jumpCount--;
@@ -93,9 +120,18 @@ public class PlayerController : MonoBehaviour
     private void Death()
     {
         // Play Death Anim
+        if ( animator != null )
+        {
+            animator.SetBool("Dead", true);
+        }
+
         // Disable Player Movement
         canMove = false;
         isGrounded = false;
+
+        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        collider.offset = new Vector2(0, .35f);
+        collider.size = new Vector2(.75f, .75f);
 
         PlayerDied?.Invoke();
     }
