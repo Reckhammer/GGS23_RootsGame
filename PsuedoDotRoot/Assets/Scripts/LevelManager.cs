@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     {
         playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         keyItem = GameObject.FindObjectOfType<KeyItem>();
+        lvlCompleteMsg = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
     }
 
     // Start is called before the first frame update
