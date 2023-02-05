@@ -390,8 +390,8 @@ GameObject:
   - component: {fileID: 1208938932}
   - component: {fileID: 1208938935}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Attachable
+  m_Name: Platform
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 1388578585}
   - component: {fileID: 1388578588}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: KeyItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
