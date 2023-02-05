@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
     private bool doorEntry = false;
+    [SerializeField] private GameObject lastDoor;
     private bool isSudo = false;
 
 
@@ -95,7 +96,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag =="Powerup")
         {
             isSudo = true;
-            //collision.trasnform.SetParent(this.transform);
+            
         }
     }
 
@@ -112,6 +113,7 @@ public class PlayerController : MonoBehaviour
         {
             doorEntry = true;
             transform.position = other.GetComponent<ExitDoor>().connectedDoor.transform.position;
+            lastDoor = other.gameObject;
         }
         if (vertical == 0f && doorEntry == true)
             {doorEntry = false;}

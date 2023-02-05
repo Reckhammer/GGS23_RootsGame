@@ -25,7 +25,6 @@ public class CursorProjectileController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         destructTimer = 4f;
-        //Destroy(gameObject, 5f);
     }
 
     private const string HORIZONTAL = "Horizontal";
@@ -62,6 +61,7 @@ public class CursorProjectileController : MonoBehaviour
         if (collision.gameObject.tag == "Attachable" && attached == null)
         {
             attached = collision.gameObject;
+            collision.GetComponent<MoveableBoxPhysics>().isAttached = true;
             attachedRB = collision.gameObject.GetComponent<Rigidbody2D>();
             transform.position = attached.transform.position + offset;
             rb.velocity = new Vector3 (0,0,0);
@@ -87,10 +87,13 @@ public class CursorProjectileController : MonoBehaviour
 
     void OnDestroy() 
     {
+        if (attached != null)
+        {
+            attached.GetComponent<MoveableBoxPhysics>().isAttached = false;
+        }
         cam = GameObject.Find("Main Camera");
-
         if (cam == null) return;
-
+        
         cam.GetComponent<CameraController>().ChangeCameraTarget(GameObject.Find("Player").transform);
         player = GameObject.Find("Player");
         player.GetComponent<PlayerController>().canMove = true;
