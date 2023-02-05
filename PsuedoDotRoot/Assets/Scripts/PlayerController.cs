@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerOffset = new Vector3 (0,1,0);
     private bool isGrounded;
     private int jumpCount;
-    private Vector2 facing;
+    private Vector2 facing = new Vector2(1,0);
     private GameObject currentProjectile;
     private float horizontal;
     private float vertical;
