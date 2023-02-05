@@ -80,11 +80,6 @@ public class CursorProjectileController : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
-    {
-
-    }
-
     void OnDestroy() 
     {
         if (attached != null)

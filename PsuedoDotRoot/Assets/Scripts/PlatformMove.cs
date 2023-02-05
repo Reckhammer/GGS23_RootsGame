@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Apple;
 
 public class PlatformMove : MonoBehaviour
 {
@@ -27,6 +26,6 @@ public class PlatformMove : MonoBehaviour
             }
         }
 
-        myRigidbody2D.position = Vector2.MoveTowards(transform.position, wayPoints[currentPos].transform.position, Time.deltaTime * speed);
+        transform.position = Vector2.MoveTowards(transform.position, wayPoints[currentPos].transform.position, Time.fixedDeltaTime * speed);
     }
 }
