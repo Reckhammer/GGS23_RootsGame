@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private const string VERTICAL = "Vertical";
     private bool doorEntry = false;
     [SerializeField] private GameObject lastDoor;
-    private bool isSudo = false;
+    //private bool isSudo = false;
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
@@ -150,13 +150,13 @@ public class PlayerController : MonoBehaviour
 
             if (collisionDirection.y > 0) // collided object is below
             {
-                rb.gravityScale = 0;
+                //rb.gravityScale = 0;
                 this.transform.SetParent(collision.transform);
             }
         }
         else if (collision.gameObject.tag =="Powerup")
         {
-            isSudo = true;
+            //isSudo = true;
             
         }
         else if (collision.gameObject.tag == "Enemy")
@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Attachable")
         {
             this.transform.SetParent(null);
-            rb.gravityScale = 2;
+            //rb.gravityScale = 2;
         }
     }
     private void OnTriggerStay2D(Collider2D other) 
