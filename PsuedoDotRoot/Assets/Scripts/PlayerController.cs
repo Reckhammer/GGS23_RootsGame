@@ -17,9 +17,14 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private int jumpCount;
     private Vector2 facing;
-    [SerializeField] private GameObject currentProjectile;
+    private GameObject currentProjectile;
     private float horizontal;
     private float vertical;
+    private const string HORIZONTAL = "Horizontal";
+    private const string VERTICAL = "Vertical";
+    private bool doorEntry = false;
+    private bool isSudo = false;
+
 
     private void Awake()
     {
@@ -29,8 +34,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis(HORIZONTAL);
+        vertical = Input.GetAxis(VERTICAL);
 
         if (horizontal != 0f || vertical != 0f)
         {
@@ -87,6 +92,11 @@ public class PlayerController : MonoBehaviour
 
             this.transform.SetParent(collision.transform);
         }
+        if (collision.gameObject.tag =="Powerup")
+        {
+            isSudo = true;
+            //collision.trasnform.SetParent(this.transform);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -95,5 +105,15 @@ public class PlayerController : MonoBehaviour
         {
             this.transform.SetParent(null);
         }
+    }
+    private void OnTriggerStay2D(Collider2D other) 
+    {
+        if (vertical > 0f && other.gameObject.tag == "Door" && doorEntry == false && canMove == true)
+        {
+            doorEntry = true;
+            transform.position = other.GetComponent<ExitDoor>().connectedDoor.transform.position;
+        }
+        if (vertical == 0f && doorEntry == true)
+            {doorEntry = false;}
     }
 }

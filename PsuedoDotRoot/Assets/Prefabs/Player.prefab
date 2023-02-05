@@ -50,7 +50,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -102,7 +102,6 @@ MonoBehaviour:
   maxJumpCount: 1
   state: 
   canMove: 1
-  currentProjectile: {fileID: 0}
 --- !u!1 &1589824148977650978
 GameObject:
   m_ObjectHideFlags: 0

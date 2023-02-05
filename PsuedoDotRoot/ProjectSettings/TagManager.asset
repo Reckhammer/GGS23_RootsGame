@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Attachable
   - Mirror
+  - Door
+  - Powerup
   layers:
   - Default
   - TransparentFX

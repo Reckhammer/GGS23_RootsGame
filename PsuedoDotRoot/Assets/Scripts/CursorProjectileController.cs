@@ -59,7 +59,7 @@ public class CursorProjectileController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) 
     {
-        if (collision.gameObject.tag == "Attachable")
+        if (collision.gameObject.tag == "Attachable" && attached == null)
         {
             attached = collision.gameObject;
             attachedRB = collision.gameObject.GetComponent<Rigidbody2D>();
@@ -68,12 +68,12 @@ public class CursorProjectileController : MonoBehaviour
             destroying = false;
         }
         //else
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" && attached == null)
         {
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "Mirror")
+        if (collision.gameObject.tag == "Mirror" && attached == null)
         {
             rb.velocity = Vector2.Reflect(rb.velocity, collision.transform.right);
         }
