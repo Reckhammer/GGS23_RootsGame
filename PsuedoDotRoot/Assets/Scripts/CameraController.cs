@@ -9,10 +9,11 @@ public class CameraController : MonoBehaviour
     private float cameraFollowSpeed = 10f;
     private Vector3 offset = new Vector3 (0,0,-10);
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        // Set cameraTarget to the player if not set in the inspector
+        if ( cameraTarget == null)
+            cameraTarget = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
