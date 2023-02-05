@@ -16,7 +16,7 @@ public class CursorProjectileController : MonoBehaviour
     private GameObject cam;
     private Vector3 offset = new Vector3 (0,0,-1);
     private bool destroying = true;
-    [SerializeField] private float destructTimer;
+    private float destructTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +28,15 @@ public class CursorProjectileController : MonoBehaviour
         //Destroy(gameObject, 5f);
     }
 
+    private const string HORIZONTAL = "Horizontal";
+    private const string VERTICAL = "Vertical";
+
     // Update is called once per frame
+    
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxis(HORIZONTAL);
+        float vertical = Input.GetAxis(VERTICAL);
         
         if (attached != null)
         {
@@ -48,7 +52,8 @@ public class CursorProjectileController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        
+        // PlayerController.collectedTheThing = true;
+        // PlayerPrefs.SetBool("CollectedTheThing", true);
 
     }
 
@@ -82,9 +87,12 @@ public class CursorProjectileController : MonoBehaviour
 
     void OnDestroy() 
     {
-            cam = GameObject.Find("Main Camera");
-            cam.GetComponent<CameraController>().ChangeCameraTarget(GameObject.Find("Player").transform);
-            player = GameObject.Find("Player");
-            player.GetComponent<PlayerController>().canMove = true;
+        cam = GameObject.Find("Main Camera");
+
+        if (cam == null) return;
+
+        cam.GetComponent<CameraController>().ChangeCameraTarget(GameObject.Find("Player").transform);
+        player = GameObject.Find("Player");
+        player.GetComponent<PlayerController>().canMove = true;
     }
 }
