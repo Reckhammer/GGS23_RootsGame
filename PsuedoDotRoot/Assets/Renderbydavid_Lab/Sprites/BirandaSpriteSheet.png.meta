@@ -1,0 +1,861 @@
+fileFormatVersion: 2
+guid: 5894fb04917366740844aafed4624bb8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1873
+        width: 100
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedabe5805635424987dcc752049f0e2
+      internalID: -658752610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1868
+        width: 165
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64336cfa4c369174ea140c1a058ef438
+      internalID: -2056751572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1895
+        width: 153
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b88bc273566b74d8699d3dede4309b
+      internalID: -1422216479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1865
+        width: 165
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0ac8f97d2b0b44d937a39f861328bf
+      internalID: -1341458002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 1879
+        width: 95
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5a217742a66a245afecfb2fd96466e
+      internalID: 1040799666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1870
+        width: 165
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0794ee18cf561c24ca6ed8b752a2d46b
+      internalID: -374128235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 1905
+        width: 154
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5defb26b909b37d4b8f9b7ee8461258e
+      internalID: -130980705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1871
+        width: 164
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39ad0eefd45e2a45a89b2393df1f42c
+      internalID: 2054171260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1245
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a251a6f6748344f8dd42a29ccb4933
+      internalID: -1846345850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1245
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8b09f5816eb994fbf5b08fc7530bfe
+      internalID: 524777647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 954
+        width: 106
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9833f56317fe8af4993122fc97c3c3e6
+      internalID: -136405712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 955
+        width: 128
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdd02dd4eefd3c44ac9c0282539e04c
+      internalID: 515568757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 954
+        width: 106
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d137cef061aa8b64f8ddb5f5d1bbc025
+      internalID: -2088047327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 977
+        width: 170
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151ef6d76ae63a146b5def76f1e53379
+      internalID: -1022322774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1124
+        width: 152
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78b732c41a37f74d98a8baee3c8d470
+      internalID: 935879642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 981
+        width: 222
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce98607e454777342b38d80a7329cf6b
+      internalID: -2085677883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1078
+        width: 399
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f78d6bfc7fda40448a00098df91015e
+      internalID: -1432702419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1257
+        width: 312
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76118666d7b239f4ca006c445f0e7003
+      internalID: -438771249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1375
+        width: 312
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c25e8c67b003f846b444bf69a4e50da
+      internalID: -770829538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 497
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae5fdfb51326dc4cbc5c69b4c52d660
+      internalID: 1569605682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 497
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54923322570d925459351d3d7688a4c9
+      internalID: -1921255590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 507
+        width: 312
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca56fda7585e9746be0bec57a093f02
+      internalID: -923310609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 625
+        width: 312
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2409a22bae11f34da7afb19dcbb1001
+      internalID: 360184200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 505
+        width: 236
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7e0d69c3d161348949ba8ed4f67435
+      internalID: 290032313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 514
+        width: 214
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f1971cdfdcdde4da3e22752608d01e
+      internalID: 623471732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 245
+        width: 211
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74ffd698045ac94599c59043b7e1954
+      internalID: -1707040504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 324
+        width: 106
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04224ac601be1fc4b85fe3ff72f3820c
+      internalID: 393153656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 324
+        width: 152
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91b7fc5766ce3a4ab8756dddbda9739
+      internalID: -510931791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 324
+        width: 170
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba39410c220c0d74eaccc5de0a2b5c0e
+      internalID: -250233861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 35
+        width: 1894
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a9c1bca5a523a479277cf9dd40a1bd
+      internalID: -1127338396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 785
+        width: 1894
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3673806ef49c5b408cb238dafdfafd2
+      internalID: -484879978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 233
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7ee2f38f250e64f99b7224a97b5f3f
+      internalID: -632328047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirandaSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 983
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe606106535eec4181359f878d88c42
+      internalID: 728704093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cf5f851412f638c429af8400439f39d4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BirandaSpriteSheet_20: -1921255590
+      BirandaSpriteSheet_3: -1341458002
+      BirandaSpriteSheet_7: 2054171260
+      BirandaSpriteSheet_1: -2056751572
+      BirandaSpriteSheet_13: -1022322774
+      BirandaSpriteSheet_27: -510931791
+      BirandaSpriteSheet_30: -484879978
+      BirandaSpriteSheet_8: -1846345850
+      BirandaSpriteSheet_9: 524777647
+      BirandaSpriteSheet_28: -250233861
+      BirandaSpriteSheet_22: 360184200
+      BirandaSpriteSheet_15: -2085677883
+      BirandaSpriteSheet_19: 1569605682
+      BirandaSpriteSheet_2: -1422216479
+      BirandaSpriteSheet_10: -136405712
+      BirandaSpriteSheet_18: -770829538
+      BirandaSpriteSheet_16: -1432702419
+      BirandaSpriteSheet_29: -1127338396
+      BirandaSpriteSheet_4: 1040799666
+      BirandaSpriteSheet_17: -438771249
+      BirandaSpriteSheet_26: 393153656
+      BirandaSpriteSheet_25: -1707040504
+      BirandaSpriteSheet_32: 728704093
+      BirandaSpriteSheet_5: -374128235
+      BirandaSpriteSheet_6: -130980705
+      BirandaSpriteSheet_21: -923310609
+      BirandaSpriteSheet_12: -2088047327
+      BirandaSpriteSheet_0: -658752610
+      BirandaSpriteSheet_14: 935879642
+      BirandaSpriteSheet_31: -632328047
+      BirandaSpriteSheet_24: 623471732
+      BirandaSpriteSheet_23: 290032313
+      BirandaSpriteSheet_11: 515568757
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
