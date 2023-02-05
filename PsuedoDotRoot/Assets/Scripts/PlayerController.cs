@@ -15,9 +15,10 @@ public class PlayerController : MonoBehaviour
     public bool canMove = true;
 
     private Rigidbody2D rb;
+    private Vector3 playerOffset = new Vector3 (0,1,0);
     private bool isGrounded;
     private int jumpCount;
-    private Vector2 facing;
+    private Vector2 facing = new Vector2(1,0);
     private GameObject currentProjectile;
     private float horizontal;
     private float vertical;
@@ -65,7 +66,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && currentProjectile == null && isGrounded)
         {
             
-            currentProjectile = Instantiate(projectileCursor, transform.position, Quaternion.identity);
+            currentProjectile = Instantiate(projectileCursor, transform.position + playerOffset, Quaternion.identity);
             Rigidbody2D rig = currentProjectile.GetComponent<Rigidbody2D>();
             rig.velocity = facing * projectileSpeed;
             canMove = false;

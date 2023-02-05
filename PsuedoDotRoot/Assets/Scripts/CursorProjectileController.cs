@@ -79,6 +79,7 @@ public class CursorProjectileController : MonoBehaviour
 
         if (collision.gameObject.tag == "Mirror" && attached == null)
         {
+            destructTimer = 4f;
             rb.velocity = Vector2.Reflect(rb.velocity, collision.transform.right);
         }
         
