@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: e59f094976ab1e94db95f76b65efa60d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 810
+        width: 33
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cf98e2c74685a43922d50febbac5fa
+      internalID: -1034348583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 812
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617809061c78cc7459ecf5b7d73269c6
+      internalID: 626577139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 812
+        width: 214
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7ab49b9e8cd1046b491eb11bb1922f
+      internalID: 646520642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 812
+        width: 292
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcff81ca957592499c253ae7b53bb2d
+      internalID: 1774647628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 812
+        width: 376
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b6be9eda587e3418b8ddcc3699b438
+      internalID: 1389749367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 812
+        width: 405
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1fda8da380b964083ba11de4035b2d
+      internalID: 469526022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 680
+        width: 437
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c8a2cde744ec84d93fdb793a0e5134
+      internalID: -2080823293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 680
+        width: 491
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396663b68efb6fb4da16b154a6c122c2
+      internalID: -1431503412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 680
+        width: 568
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1949f63cee9e6eb4f9a46e8728a4b89e
+      internalID: 2130220650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 540
+        width: 662
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd0236d73478364b98cdbc9704aaf0d
+      internalID: -1303447730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 540
+        width: 751
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9421e74929f8235409bad1b48112bbd9
+      internalID: 1858506743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 398
+        width: 803
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be9ea41879d24e43b12d259ef56f4b1
+      internalID: -1062003621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 398
+        width: 753
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76669afaf70cc5b4bb09da64f33cca85
+      internalID: -613719620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 315
+        width: 21
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004f418fad2a8c345a9f4b60ac441446
+      internalID: -1145232383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 315
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8094c1d996dc6469c150274b81dbd7
+      internalID: -1576569067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 315
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662459044dfd15d40aa76a68b3ad5584
+      internalID: -232778287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 315
+        width: 105
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4203e8aa18d2d6945aba29fd1075ccd7
+      internalID: 805134053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 315
+        width: 133
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5215ee6e0a012a14cbbef1e6ca0e93f6
+      internalID: 1319436049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 315
+        width: 162
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86eff5b874a957b48855302c4922295e
+      internalID: -1254614693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 315
+        width: 143
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eb5f7d454ffe644babfa3043848844
+      internalID: 3505675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 315
+        width: 160
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6cb96845604344a99f93a14d15622d
+      internalID: -1412620920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 315
+        width: 187
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7819c18c4463954d88a1cbe54faf1e6
+      internalID: 48281257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 315
+        width: 221
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfee8ec57c905046934154b87933268
+      internalID: 1240099702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 315
+        width: 246
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc872efd65bb9b4d9192975d95d22b6
+      internalID: 374240195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 240
+        width: 274
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0aee90d69e7c047bde147a973c5907
+      internalID: -500036421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 240
+        width: 267
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a803d089024854b9c94a334194edf7
+      internalID: -1771452451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 165
+        width: 663
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e011749aa55944699c081ff55396ef
+      internalID: -2055021037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleCardSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 160
+        width: 707
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cc6876476fd6340a26c26a422444c5
+      internalID: -1316156837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d463cc5f8c2d4174f824fd58b1acf332
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TitleCardSpriteSheet_23: 374240195
+      TitleCardSpriteSheet_7: -1431503412
+      TitleCardSpriteSheet_14: -1576569067
+      TitleCardSpriteSheet_26: -2055021037
+      TitleCardSpriteSheet_10: 1858506743
+      TitleCardSpriteSheet_5: 469526022
+      TitleCardSpriteSheet_9: -1303447730
+      TitleCardSpriteSheet_25: -1771452451
+      TitleCardSpriteSheet_1: 626577139
+      TitleCardSpriteSheet_4: 1389749367
+      TitleCardSpriteSheet_20: -1412620920
+      TitleCardSpriteSheet_11: -1062003621
+      TitleCardSpriteSheet_21: 48281257
+      TitleCardSpriteSheet_24: -500036421
+      TitleCardSpriteSheet_18: -1254614693
+      TitleCardSpriteSheet_3: 1774647628
+      TitleCardSpriteSheet_0: -1034348583
+      TitleCardSpriteSheet_13: -1145232383
+      TitleCardSpriteSheet_15: -232778287
+      TitleCardSpriteSheet_6: -2080823293
+      TitleCardSpriteSheet_8: 2130220650
+      TitleCardSpriteSheet_16: 805134053
+      TitleCardSpriteSheet_2: 646520642
+      TitleCardSpriteSheet_17: 1319436049
+      TitleCardSpriteSheet_22: 1240099702
+      TitleCardSpriteSheet_12: -613719620
+      TitleCardSpriteSheet_19: 3505675
+      TitleCardSpriteSheet_27: -1316156837
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
