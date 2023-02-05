@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public GameObject cam;
     public float projectileSpeed = 1f;
     public int maxJumpCount;
-    public string state; 
     public bool canMove = true;
 
     private Rigidbody2D rb;
@@ -70,29 +69,42 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove == true)
         {
-            rb.position += new Vector2(horizontal * moveSpeed * Time.deltaTime, 0);
+            rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
         }
-
-        
     }
 
     private void Jump ()
     {
-        rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
         jumpCount--;
     }
 
+    private void ResetJumpParams()
+    {
+        isGrounded = true;
+        jumpCount = maxJumpCount;
+    }
+
     private void OnCollisionEnter2D (Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag =="Attachable")
+        if (collision.gameObject.tag == "Ground")
         {
-            isGrounded = true;
-            jumpCount = maxJumpCount;
-
-            this.transform.SetParent(collision.transform);
+            ResetJumpParams();
         }
-        if (collision.gameObject.tag =="Powerup")
+        else if (collision.gameObject.tag == "Attachable" )
+        {
+            ResetJumpParams();
+
+            Vector2 collisionDirection = this.transform.position - collision.transform.position;
+
+            if (collisionDirection.y > 0) // collided object is below
+            {
+                rb.gravityScale = 0;
+                this.transform.SetParent(collision.transform);
+            }
+        }
+        else if (collision.gameObject.tag =="Powerup")
         {
             isSudo = true;
             //collision.trasnform.SetParent(this.transform);
@@ -104,6 +116,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Attachable")
         {
             this.transform.SetParent(null);
+            rb.gravityScale = 2;
         }
     }
     private void OnTriggerStay2D(Collider2D other) 
