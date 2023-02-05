@@ -19,7 +19,7 @@ public class Attached : MonoBehaviour
 
             if (collisionDirection.y > 0) // collided object is below
             {
-                rb.gravityScale = 0;
+                //rb.gravityScale = 0;
                 this.transform.SetParent(other.transform);
             }
         }
@@ -30,7 +30,7 @@ public class Attached : MonoBehaviour
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Attachable")
         {
             this.transform.SetParent(null);
-            rb.gravityScale = 1;
+            //rb.gravityScale = 1;
         }
     }
 }

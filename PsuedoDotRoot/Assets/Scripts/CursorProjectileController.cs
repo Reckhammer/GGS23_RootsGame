@@ -51,8 +51,6 @@ public class CursorProjectileController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // PlayerController.collectedTheThing = true;
-        // PlayerPrefs.SetBool("CollectedTheThing", true);
 
     }
 
