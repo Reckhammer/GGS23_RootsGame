@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,13 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class KeyItem : MonoBehaviour
 {
+    public string fileName = "keyItem.exe";
     public GameObject targetObject;         // Object that this is following
     public string targetTag = "Player";     // Tag of object to follow
     public float followSpeed = 5f;          // How fast this will move to follow target
     public float distFromTarget = .5f;      // Distance from target to stop moving
+
+    public event Action KeyItemCollected;
 
     // Update is called once per frame
     void Update()
@@ -25,7 +29,7 @@ public class KeyItem : MonoBehaviour
         if (collision.gameObject.tag == targetTag)
         {
             targetObject = collision.gameObject;
-            // Send event/notification that key item was picked up
+            KeyItemCollected?.Invoke();
         }
     }
 }
