@@ -46,6 +46,10 @@ public class LabAnimationManager : MonoBehaviour
         if (animToPlay.Equals("Level3Complete"))
         {
             CreditsUI.SetActive(true);
+            LabLook lookScript = GameObject.FindObjectOfType<LabLook>();
+            lookScript.enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
 
             yield return new WaitForSeconds(5f);
 

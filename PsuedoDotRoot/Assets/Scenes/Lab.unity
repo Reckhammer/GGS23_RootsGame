@@ -3382,7 +3382,7 @@ MonoBehaviour:
   labAnimator: {fileID: 1434216582}
   animToPlay: 
   animationWaitTime: 0
-  CreditsUI: {fileID: 1716005005}
+  CreditsUI: {fileID: 89390549}
   ReplayUI: {fileID: 1600930372}
 --- !u!4 &730169245
 Transform:
