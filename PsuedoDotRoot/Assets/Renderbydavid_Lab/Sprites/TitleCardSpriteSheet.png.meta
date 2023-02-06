@@ -3,7 +3,7 @@ guid: e59f094976ab1e94db95f76b65efa60d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -63,7 +63,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -124,8 +123,8 @@ TextureImporter:
         y: 810
         width: 33
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,8 +144,8 @@ TextureImporter:
         y: 812
         width: 125
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,8 +165,8 @@ TextureImporter:
         y: 812
         width: 214
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,8 +186,8 @@ TextureImporter:
         y: 812
         width: 292
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,8 +207,8 @@ TextureImporter:
         y: 812
         width: 376
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,8 +228,8 @@ TextureImporter:
         y: 812
         width: 405
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,8 +249,8 @@ TextureImporter:
         y: 680
         width: 437
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,12 +266,12 @@ TextureImporter:
       name: TitleCardSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 640
-        y: 680
+        x: 638
+        y: 678
         width: 491
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,8 +291,8 @@ TextureImporter:
         y: 680
         width: 568
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,8 +312,8 @@ TextureImporter:
         y: 540
         width: 662
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,8 +333,8 @@ TextureImporter:
         y: 540
         width: 751
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,8 +354,8 @@ TextureImporter:
         y: 398
         width: 803
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -376,8 +375,8 @@ TextureImporter:
         y: 398
         width: 753
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -715,34 +714,35 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TitleCardSpriteSheet_23: 374240195
-      TitleCardSpriteSheet_7: -1431503412
-      TitleCardSpriteSheet_14: -1576569067
-      TitleCardSpriteSheet_26: -2055021037
-      TitleCardSpriteSheet_10: 1858506743
-      TitleCardSpriteSheet_5: 469526022
-      TitleCardSpriteSheet_9: -1303447730
-      TitleCardSpriteSheet_25: -1771452451
-      TitleCardSpriteSheet_1: 626577139
-      TitleCardSpriteSheet_4: 1389749367
-      TitleCardSpriteSheet_20: -1412620920
-      TitleCardSpriteSheet_11: -1062003621
-      TitleCardSpriteSheet_21: 48281257
-      TitleCardSpriteSheet_24: -500036421
-      TitleCardSpriteSheet_18: -1254614693
-      TitleCardSpriteSheet_3: 1774647628
-      TitleCardSpriteSheet_0: -1034348583
-      TitleCardSpriteSheet_13: -1145232383
-      TitleCardSpriteSheet_15: -232778287
-      TitleCardSpriteSheet_6: -2080823293
-      TitleCardSpriteSheet_8: 2130220650
-      TitleCardSpriteSheet_16: 805134053
-      TitleCardSpriteSheet_2: 646520642
-      TitleCardSpriteSheet_17: 1319436049
-      TitleCardSpriteSheet_22: 1240099702
-      TitleCardSpriteSheet_12: -613719620
-      TitleCardSpriteSheet_19: 3505675
-      TitleCardSpriteSheet_27: -1316156837
+      TitleCardSpriteSheet_27: -1034348583
+      TitleCardSpriteSheet_28: 626577139
+      TitleCardSpriteSheet_7: 646520642
+      TitleCardSpriteSheet_14: 1774647628
+      TitleCardSpriteSheet_26: 1389749367
+      TitleCardSpriteSheet_10: 469526022
+      TitleCardSpriteSheet_5: -2080823293
+      TitleCardSpriteSheet_9: -1431503412
+      TitleCardSpriteSheet_25: 2130220650
+      TitleCardSpriteSheet_1: -1303447730
+      TitleCardSpriteSheet_4: 1858506743
+      TitleCardSpriteSheet_20: -1062003621
+      TitleCardSpriteSheet_11: -613719620
+      TitleCardSpriteSheet_21: -1145232383
+      TitleCardSpriteSheet_24: -1576569067
+      TitleCardSpriteSheet_18: -232778287
+      TitleCardSpriteSheet_3: 805134053
+      TitleCardSpriteSheet_0: 1319436049
+      TitleCardSpriteSheet_13: -1254614693
+      TitleCardSpriteSheet_15: 3505675
+      TitleCardSpriteSheet_6: -1412620920
+      TitleCardSpriteSheet_8: 48281257
+      TitleCardSpriteSheet_16: 1240099702
+      TitleCardSpriteSheet_2: 374240195
+      TitleCardSpriteSheet_17: -500036421
+      TitleCardSpriteSheet_22: -1771452451
+      TitleCardSpriteSheet_12: -2055021037
+      TitleCardSpriteSheet_19: -1316156837
+      TitleCardSpriteSheet_23: -727411872
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
