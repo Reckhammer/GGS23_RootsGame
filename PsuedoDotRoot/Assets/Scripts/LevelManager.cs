@@ -24,6 +24,12 @@ public class LevelManager : MonoBehaviour
         keyItem.KeyItemCollected += OnLevelComplete;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Minus))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     void OnPlayerDeath()
     {
         StartCoroutine(DeathSequence());
