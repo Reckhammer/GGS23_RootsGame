@@ -49,7 +49,9 @@ public class LevelManager : MonoBehaviour
         print("Starting LevelCompleteSequence");
         lvlCompleteMsg.GetComponent<TextMeshProUGUI>().text = keyItem.fileName + " Collected";
         lvlCompleteMsg.SetActive(true);
-
+        PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 1);
+        
+        //PlayerPrefs.HasKey("Level 1")
         yield return new WaitForSeconds(3f);
 
         SceneManager.LoadScene("Lab");
