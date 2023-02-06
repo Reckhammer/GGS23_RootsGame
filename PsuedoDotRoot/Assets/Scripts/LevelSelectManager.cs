@@ -35,9 +35,18 @@ public class LevelSelectManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (levelHover == 1){}
-            if (levelHover == 2){}
-            if (levelHover == 3){}
+            if (levelHover == 1)
+            {
+                SceneManager.LoadScene("Level 1");
+            }
+            if (levelHover == 2)
+            {
+                SceneManager.LoadScene("Level 2");
+            }
+            if (levelHover == 3)
+            {
+                SceneManager.LoadScene("Level 3");
+            }
         }
 
     }
